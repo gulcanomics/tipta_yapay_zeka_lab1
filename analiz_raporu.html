@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAB 1 | Hasta Verileri Analizi</title>
+<style>
+body {font: 16px system-ui, sans-serif; color: #182e45; background: #eef2f7; margin: 0;}
+header {background: #163b62; color: white; padding: 24px max(20px, calc((100vw - 900px) / 2));}
+h1, h2 {margin: 0 0 12px;}
+main {max-width: 900px; margin: 24px auto; padding: 0 16px;}
+section {background: white; border: 1px solid #c9d6e4; padding: 20px; margin-bottom: 16px; overflow: auto;}
+table {width: 100%; border-collapse: collapse; text-align: right; font-variant-numeric: tabular-nums;}
+th, td {padding: 8px 12px; border-bottom: 1px solid #c9d6e4;}
+thead th {background: #dce8f6;}
+tbody th {background: #edf3fa; text-align: left;}
+tbody tr:nth-child(even) td {background: #f5f7fa;}
+.bar {display: grid; grid-template-columns: 6em 1fr 3em; align-items: center; gap: 8px; margin: 8px 0;}
+meter {width: 100%; height: 20px;}
+</style>
+<header><h1>Hasta verileri analizi</h1><div>LAB 1 · Sentetik veri</div></header>
+<main>
+<section><h2>Veri özeti</h2>
+<p>40 satır · 5 sütun · 40 geçerli yaş</p>
+<p>Eksik yaş: 0 · Geçersiz yaş: 0</p></section>
+<section><h2>Tanımlayıcı istatistikler</h2>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Yaş</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Geçerli N</th>
+      <td>40.00</td>
+    </tr>
+    <tr>
+      <th>Ortalama</th>
+      <td>57.98</td>
+    </tr>
+    <tr>
+      <th>Standart sapma</th>
+      <td>13.27</td>
+    </tr>
+    <tr>
+      <th>Minimum</th>
+      <td>38.00</td>
+    </tr>
+    <tr>
+      <th>25. yüzdelik</th>
+      <td>44.00</td>
+    </tr>
+    <tr>
+      <th>Medyan</th>
+      <td>57.00</td>
+    </tr>
+    <tr>
+      <th>75. yüzdelik</th>
+      <td>72.00</td>
+    </tr>
+    <tr>
+      <th>Maksimum</th>
+      <td>79.00</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Cinsiyete göre yaş</h2>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>N</th>
+      <th>Ortalama</th>
+      <th>Medyan</th>
+      <th>Standart sapma</th>
+    </tr>
+    <tr>
+      <th>Cinsiyet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Erkek</th>
+      <td>19</td>
+      <td>58.95</td>
+      <td>61.00</td>
+      <td>13.13</td>
+    </tr>
+    <tr>
+      <th>Kadın</th>
+      <td>21</td>
+      <td>57.10</td>
+      <td>55.00</td>
+      <td>13.65</td>
+    </tr>
+  </tbody>
+</table></section>
+<section><h2>Yaş dağılımı</h2><p>Yaş aralığına göre kişi sayısı</p>
+<div class="bar"><span>30–39</span><meter min="0" max="12" value="1"></meter><strong>1</strong></div><div class="bar"><span>40–49</span><meter min="0" max="12" value="12"></meter><strong>12</strong></div><div class="bar"><span>50–59</span><meter min="0" max="12" value="8"></meter><strong>8</strong></div><div class="bar"><span>60–69</span><meter min="0" max="12" value="8"></meter><strong>8</strong></div><div class="bar"><span>70–79</span><meter min="0" max="12" value="11"></meter><strong>11</strong></div></section>
+</main>
+</html>
